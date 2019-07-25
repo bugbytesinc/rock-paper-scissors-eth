@@ -1,0 +1,5 @@
+<div class="win-status">
+    <div *ngIf="isWinner"><div class="win">You Won with move: <b>{{moveText}}</b>!</div> Payout is <b>{{payout}}</b> Ether</div>
+    <div *ngIf="isLoser"><div class="loss">You lost to<br/>{{latestStatus.winner}}<br/>they moved <b>{{moveText}}</b></div> Payout was {{payout}} Ether</div>
+    <div *ngIf="!isWinner && !isLoser && latestStatus"><div class="other">Player {{latestStatus.winner}}</div> won with move {{moveText}}<br/>Payout was {{payout}} Ether</div>
+</div>

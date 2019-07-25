@@ -1,0 +1,59 @@
+:host {
+    margin-top: 1rem;
+    padding: 1rem;
+}
+.bet
+{
+    text-align: center;
+    font-size: 4vmin;
+    input {
+        font-size: 4vmin;
+        &.invalid {
+            border-color: red;
+        }
+    }
+}
+.plays
+{    
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    &>div {
+        cursor: pointer;
+        width: 20vmin;
+        height: 20vmin;
+        font-size: 4vmin;
+        margin: 0 2vmin;
+        border: 4px solid gray;
+        text-align: center;
+        display: inline-block;
+        &:hover {
+            background-color: #ddf;
+            border-color: blue;
+        }
+        &>div {
+            font-weight: bold;
+            margin-top: 3vmin;
+            font-size: 5vmin;
+        }
+    }
+    &.invalid {
+        opacity: 0.5;
+        &>div:hover {
+            background-color: transparent;
+        }
+    }
+    &.processing {
+        &>div {
+            background-color: #ccc;
+        }
+    }
+}
+.show-processing {
+    height: 8vmin;
+    padding-top: 2vmin;
+    font-size: 4vmin;
+    text-align: center;
+    color: gray;
+}

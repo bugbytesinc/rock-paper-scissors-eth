@@ -1,0 +1,6 @@
+<div>
+    <div *ngIf="!openingMove" class="Waiting">Waiting for first player Move...</div>
+    <div *ngIf="openingMove">Opening Move: <b>{{openingMoveText}}</b></div>
+    <div *ngIf="openingMoveFull">(Warning: limit of {{openingMoveText}} moves has been reached.)</div>
+    <div>Est. Min Payout: {{minPayout}} Ether</div>
+</div>

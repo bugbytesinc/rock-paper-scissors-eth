@@ -1,0 +1,13 @@
+<div>
+    <div class="bet">
+        Bet <input type="number" [value]="bet" [min]="minBet" (input)="onBetChanged($event.target.value)" [class.invalid]="!validInput"/> Ether
+    </div>
+    <div class="plays" [class.invalid]="!validInput" [class.processing]="processing">
+        <div (click)="playRock()">Play<div>Rock</div></div>
+        <div (click)="playPaper()">Play<div>Paper</div></div>
+        <div (click)="playScissors()">Play<div>Scissors</div></div>
+    </div>
+    <div class="show-processing">
+            <div *ngIf="processing" >Authorizing...</div>
+    </div>
+</div>

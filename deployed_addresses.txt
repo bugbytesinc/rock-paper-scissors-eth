@@ -1,0 +1,31 @@
+The Rock Paper Scissors contract is deployed on the following networks:
+
+NETWORK: ETHEREUM (1)
+OWNER: 0x0b127002fd6a98e15272e17c6a008ca1b73f393d
+CONTRACT: 0x1f0f4f0cc01d9ff3a30584f4c6af6c33c9b3b58a
+TRANSACTON: https://etherscan.io/tx/0xc0219cc9168e81d2022c6502f763f6c7f6085526c39d0ced004c27b6d24e447a
+VERIFIED: https://etherscan.io/address/0x1f0f4f0cc01d9ff3a30584f4c6af6c33c9b3b58a#code
+
+NETWORK: ROPSTEN (3)
+OWNER: 0xf91bafbe212af78a5543c2764b7b9220e1f38960
+CONTRACT: 0xca2baee5879d64ffb9c153033519d76547b5d54c
+TRANSACTON: https://ropsten.etherscan.io/tx/0x06172abe21dbcbe495e66313b44019987224de17bede86ef215f93968978309c
+VERIFIED: https://ropsten.etherscan.io/address/0xca2baee5879d64ffb9c153033519d76547b5d54c#code          
+
+NETWORK: RINKEBY (4)
+OWNER: 0xf91bafbe212af78a5543c2764b7b9220e1f38960
+CONTRACT: 0x57038845e7fe37661996a20d6fd3d30e75c64c59
+TRANSACTION: https://rinkeby.etherscan.io/tx/0xb011e7ba8e99978d6139ab2240d55008fb9a2c7aed4644ff4dc0b1b877ba9bdd
+VERIFIED: https://rinkeby.etherscan.io/address/0x57038845e7fe37661996a20d6fd3d30e75c64c59#code
+
+
+
+The UI for the application is deployed at:
+
+http://rpsdemo.azurewebsites.net/
+
+It relies on the web3 provider to select the network and 
+is configured with network the contract address mappings above.
+
+
+

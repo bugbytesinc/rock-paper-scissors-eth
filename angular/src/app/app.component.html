@@ -1,0 +1,15 @@
+<div>
+  <div *ngIf="!connectedToWeb3">Waiting to connect to a Web3 provider, please authorize and refresh this page.</div>
+  <div *ngIf="connectedToWeb3 && contractFound" class="main-game">
+    <div class="main-title">Rock Paper Scissors Race!</div>
+    <rps-game-status></rps-game-status>
+    <rps-play-maker></rps-play-maker>
+    <rps-play-status></rps-play-status>
+    <rps-wallet-info></rps-wallet-info>
+  </div>
+  <div *ngIf="connectedToWeb3 && !contractFound" class="main-game"> 
+      <div class="main-title">Rock Paper Scissors Race!</div>
+      <div class="not-found">Sorry, we're unable to find the RPS contract on this network.<br/>Please change to a different network and refresh this page.</div>
+      <rps-wallet-info></rps-wallet-info>
+  </div>
+</div>
